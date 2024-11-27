@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  servlet:
+    multipart:
+      max-file-size: 40MB
+      max-request-size: 100MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sublayer?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
